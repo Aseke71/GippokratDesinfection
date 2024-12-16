@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИП Гиппократ Дезинфекция</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ИП Гиппократ Дезинфекция</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openSection('services')">Услуги</a>
+                    <ul class="dropdown">
+                        <li><a href="#" onclick="showService('dezinfekciya')">Дезинсекция</a></li>
+                        <li><a href="#" onclick="showService('deratizaciya')">Дератизация</a></li>
+                        <li><a href="#" onclick="showService('dezinficir')">Дезинфекция</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="openSection('reviews')">Отзывы</a></li>
+                <li><a href="#" onclick="openSection('contacts')">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="content-section">
+        <h2>Услуги</h2>
+        <div id="service-description">
+            <p>Выберите услугу для просмотра подробной информации и цен.</p>
+        </div>
+    </section>
+
+    <section id="reviews" class="content-section">
+        <h2>Отзывы наших клиентов</h2>
+        <div id="reviews-list"></div>
+        <div id="add-review">
+            <h3>Написать отзыв</h3>
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <textarea id="review-text" placeholder="Ваш отзыв" required></textarea>
+            <button onclick="addReview()">Добавить отзыв</button>
+        </div>
+    </section>
+
+    <section id="contacts" class="content-section">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: email@example.com</p>
+        <p>Адрес: г. Алматы, ул. Примерная, 123</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
